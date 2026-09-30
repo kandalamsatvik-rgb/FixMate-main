@@ -1,0 +1,10 @@
+{
+  "name": "Remix FixMate - On-Demand Service Platform",
+  "description": "On-demand home and maintenance service delivery connecting customers with nearby certified pros featuring real-time maps, time slots, instant dispatch, and live communication.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="fixmate-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="accent-glow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0f172a" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#fixmate-bg)" />
+
+  <!-- Subtle India Flag Tristripe Accent at top right corner -->
+  <path d="M380 48 Q440 48 464 72 L464 120 L380 48 Z" fill="#ff9933" opacity="0.9" />
+  <path d="M400 48 Q440 48 464 72 L464 96 L400 48 Z" fill="#138808" opacity="0.8" />
+
+  <!-- Inner Glowing Shield/Badge -->
+  <g filter="url(#shadow)">
+    <!-- Main Wrench / Spanner Icon -->
+    <path d="M352 110 C322 80 274 74 238 96 L284 142 L246 180 L200 134 C178 170 184 218 214 248 C226 260 240 268 255 273 L125 403 C113 415 113 435 125 447 C137 459 157 459 169 447 L299 317 C304 332 312 346 324 358 C354 388 402 394 438 372 L392 326 L430 288 L476 334 C498 298 492 250 462 220 C436 194 398 184 366 193 L323 150 C332 118 342 110 352 110 Z" fill="#ffffff" />
+    
+    <!-- Bolt / Spark Accent -->
+    <path d="M190 280 L160 330 L200 330 L170 390 L230 320 L195 320 Z" fill="url(#accent-glow)" />
+  </g>
+
+  <!-- Indian Rupee Emblem Circle at Bottom Right -->
+  <g transform="translate(330, 330)">
+    <circle cx="65" cy="65" r="54" fill="#ffffff" />
+    <circle cx="65" cy="65" r="48" fill="#0f172a" />
+    <text x="65" y="82" font-family="Plus Jakarta Sans, sans-serif" font-weight="900" font-size="52" fill="#22c55e" text-anchor="middle">₹</text>
+  </g>
+</svg>
